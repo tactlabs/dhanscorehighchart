@@ -1,0 +1,9 @@
+tcharts_dhanushmovscore:
+    build: .
+    environment:
+      WORKER_SMTP_PORT: 265
+    command: python app.py
+    volumes:
+      - .:/home/app/tact_chart
+    ports:
+      - "8000:8000"
